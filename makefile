@@ -1,12 +1,12 @@
-# Makefile for A2 assignment
+# Makefile for the spell checker
 
 CC = gcc
 CFLAGS = -Wall -g -std=c11 -lpthread
 
 # Target to compile the main executable
-A2: A2.c
-	$(CC) $(CFLAGS) A2.c -o A2 
+spellchecker.c: spellchecker.c
+	$(CC) $(CFLAGS) spellchecker.c -o spellchecker 
 
 # Target to clean up generated files
 clean:
-	rm -f A2
+	rm -f spellchecker
